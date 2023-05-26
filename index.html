@@ -10,6 +10,11 @@
     <title>Board of Advisor</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+    <!-- Goofle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 <style>
     a {
@@ -49,12 +54,12 @@
     height: 100%;
     position: relative;
     z-index: 1;">
-        <div class="hero">
-            <div class="antialiased " style="background-color: rgba(38, 184, 237, 0.5); top: 0;
+        <div class="hero ">
+            <div class="antialiased  " style="background-color: rgba(38, 184, 237, 0.5); top: 0;
             left: 0;
             width: 100%;
             height: 100%;">
-                <div class="w-full text-gray-700 ">
+                <div class="w-full text-gray-700 absolute">
                     <div x-data="{ open: true }"
                         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                         <div class="flex flex-row items-center justify-between p-4">
@@ -76,13 +81,15 @@
                         </div>
                         <nav :class="{'flex': open, 'hidden': !open}"
                             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                href="#">Blog</a>
-                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                href="#">Portfolio</a>
-                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Home</a>
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="#">About</a>
-                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Services</a>
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Industry</a>
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="#">Contact</a>
                             <div @click.away="open = false" class="relative" x-data="{ open: true }">
 
@@ -92,7 +99,7 @@
 
                     </div>
                     <div
-                        class=" flex flex-col items-center justify-center ] w-[95%] sm:w-[70%] lg:h-[50vh] my-[50%] md:my-[10%] mx-auto  bg-[var(--primary-color)] opacity-100 p-10">
+                        class=" flex flex-col  items-center justify-center ] w-[95%] sm:w-[70%] lg:h-[50vh] my-[50%] md:my-[10%] mx-auto  bg-[var(--primary-color)] opacity-100 p-10">
                         <h1 class="sm:text-6xl text-2xl text-center font-bold my-3">Board Of Advisors</h1>
 
 
@@ -101,6 +108,88 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="">
+        <div>
+            <div class="grid lg:grid-cols-3 m ">
+
+                <div class=" sm:h-full pt-32 mx-auto self-end  w-[70%]  flex items-end justify-end"
+                    style="background-color: rgba(38, 184, 237, 0.3);opacity: 90%;">
+
+                    <div class="relative sm:left-24 w-96 pt-10 pl-10  sm:mx-10 md:flex md:gap-10 lg:flex-col md:w-full">
+                        <img src="assets/BoA1.jpeg" alt="" class="max-h-full " style="-webkit-box-shadow: -17px 10px 35px 2px rgba(0,0,0,0.83);
+                    -moz-box-shadow: -17px 10px 35px 2px rgba(0,0,0,0.83);
+                    box-shadow: -17px 10px 35px 2px rgba(0,0,0,0.83);">
+                        <h3 class="sm:text-5xl whitespace-nowrap my-10 lg:rel text-3xl"
+                            style="font-family: 'Great Vibes', cursive;">Narayanan Muthiah</h3>
+                    </div>
+
+                </div>
+                <div class="w-85% col-span-2 p-6 md:p-24">
+                    Narayanan Muthiah is a highly accomplished professional with over 35+ years of experience in
+                    software engineering and technology. With a strong background in technical roles including software
+                    engineer, lead engineer, and technical architect, Narayanan has honed his skills working on various
+                    projects for clients in the banking and financial services industries. <br>
+
+                    Starting his career with Tata Consultancy Services in 2002, Narayanan gained expertise in software
+                    development and project management. His decade-long tenure at TCS saw him rise through the ranks to
+                    become a Technical Architect, leading teams on complex projects. In 2013, Narayanan joined Verizon
+                    as a Lead Engineer, where he gained experience in cloud computing, DevOps, and big data
+                    technologies. <br>
+
+                    Currently a Senior Manager at Amazon Web Services (AWS), Narayanan is responsible for leading a team
+                    of Solutions Architects who help customers implement and adopt cloud technologies. His technical
+                    proficiency in Java, Python, C++, agile methodologies, software design patterns, and cloud
+                    architecture makes him a valuable asset to any organization in the technology industry. <br>
+
+                    In his role as a Board of Advisor for Webisdom, Narayanan's extensive experience in the technology
+                    industry and expertise in agile methodologies, software design patterns, and cloud architecture have
+                    aided Webisdom in developing innovative solutions for its clients and provided valuable insights to
+                    enhance technology strategies and stay ahead of the competition.
+
+
+                </div>
+
+            </div>
+            <div class="grid lg:grid-cols-3 ">
+                <div class="w-85% col-span-2 p-6  md:p-24">
+                    Harpreet Singh is a highly skilled and accomplished software engineer with a strong academic
+                    background in computer science and engineering. He graduated from Lovely Professional University
+                    with a Bachelor of Technology degree in 2019, and began his career as a Software Engineer at Jio,
+                    where he helped develop various applications such as a mobile wallet, an e-commerce platform, and a
+                    video conferencing solution. <br>
+
+                    Currently, Harpreet is a Senior Software Engineer at Zscaler, a leading cloud security company,
+                    where he is responsible for maintaining and developing the company's cloud security platform. With
+                    his expertise in Java, Python, and C++, as well as experience with a range of development tools and
+                    frameworks, Harpreet has become a valuable contributor to several open-source projects and
+                    programming events. <br>
+
+                    As a Board of Advisor for Webisdom, Harpreet brings with him a wealth of knowledge and experience in
+                    software engineering, cloud computing, and cybersecurity. He has a deep understanding of the latest
+                    trends in technology and can provide valuable insights and recommendations to help the agency stay
+                    ahead of the competition. His contributions to the company help ensure that Webisdom is always
+                    up-to-date with the latest developments in the industry, enabling it to provide cutting-edge
+                    services to its clients
+
+
+                </div>
+                <div class=" sm:h-full pt-32 mx-auto self-end  w-[70%]  flex items-end justify-end"
+                    style="background-color: rgba(38, 184, 237, 0.3);opacity: 90%;">
+
+                    <div class="relative md:w-full w-96 pt-10   sm:mx-10 md:flex md:gap-10 lg:flex-col lg:right-[20%]">
+                        <img src="assets/BoA2.jpeg" alt="" class="max-h-full " style="-webkit-box-shadow: -17px 10px 35px 2px rgba(0,0,0,0.83);
+                        -moz-box-shadow: -17px 10px 35px 2px rgba(0,0,0,0.83);
+                        box-shadow: -17px 10px 35px 2px rgba(0,0,0,0.83);">
+                        <h3 class="sm:text-5xl text-3xl  whitespace-nowrap my-10 lg:rel"
+                            style="font-family: 'Great Vibes', cursive;">Harpreet Singh</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
