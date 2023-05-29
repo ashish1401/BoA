@@ -580,6 +580,10 @@ video {
   bottom: -8rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-16 {
   left: 4rem;
 }
@@ -590,10 +594,6 @@ video {
 
 .right-0 {
   right: 0px;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .z-40 {
